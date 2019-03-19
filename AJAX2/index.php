@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Gijs Huitenga">
@@ -54,26 +54,26 @@
 					$bmi = $gewicht / $kwadraat;
 					$bmi = round($bmi);
 					echo "Uw BMI bedraagt: " . $bmi . "<br>";
-					if ($bmi < 18) {
-						echo "<font color='blue'><b>U lijdt aan ondergewicht!</b></font>";
+					if ($bmi <= 18) {
+						echo "<b style='color: blue;'>U lijdt aan ondergewicht!</b>";
 					}
 					if ($bmi > 18 AND $bmi <= 25) {
-						echo "<font color='green'><b>U heeft een gezond gewicht!</b></font>";
+						echo "<b style='color: green;'>U heeft een gezond gewicht!</b>";
 					}
 					if ($bmi > 25 AND $bmi <= 27) {
-						echo "<font color='purple'><b>U heeft een licht overgewicht!</b></font>";
+						echo "<b style='color: purple;'>U heeft een licht overgewicht!</b>";
 					}
 					if ($bmi > 27 AND $bmi <= 30) {
-						echo "<font color='yellow'><b>U heeft een matig overgewicht!</b></font>";
+						echo "<b style='color: yellow;'>U heeft een matig overgewicht!</b>";
 					}
 					if ($bmi > 30 AND $bmi <= 40) {
-						echo "<font color='orange'><b>U heeft een ernstig overgewicht!</b></font>";
+						echo "<b style='color: orange;'>U heeft een ernstig overgewicht!</b>";
 					}
 					if ($bmi > 40 AND $bmi <=60) {
-						echo "<font color='red'><b>U heeft een ziekelijk overgewicht!</b></font>";
+						echo "<b style='color: red;'>U heeft een ziekelijk overgewicht!</b>";
 					}
 					if ($bmi > 60) {
-						echo "<font color='grey'><b>Neem snel contact op met uw begrafenis ondernemer!</b></font>";
+						echo "<b style='color: grey;'>Neem snel contact op met uw begrafenis ondernemer!</b>";
 					}
 				}
 			}
