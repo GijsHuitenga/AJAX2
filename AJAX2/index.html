@@ -5,10 +5,11 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Gijs Huitenga">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
 		<title>AJAX2 | BMI calulator</title>
 		<style>
 			
-			input.bereken {
+			button.bereken {
 				padding: 8px 16px;
 				text-decoration: none;
 				background-color: #407de1;
@@ -18,7 +19,7 @@
 				font-size: 16px;
 			}
 
-			input.bereken:hover {
+			button.bereken:hover {
 				padding: 8px 16px;
 				text-decoration: none;
 				background-color: #333;
@@ -38,7 +39,7 @@
 			<li><a class="active" href="index.html">BMI calculator</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-		<div style="margin-left: 17%;margin-top: 20px;">
+		<div id="input" style="margin-left: 17%;margin-top: 20px;">
 			<h3>BMI calculator</h3>
 			<form action="index.php" method="get">
 				<table>
@@ -47,7 +48,7 @@
 							Uw gewicht in kg:
 						</td>
 						<td>
-							<input type="text" name="gewicht">
+							<input type="text" name="gewicht" id="gewicht">
 							<br>
 						</td>
 					</tr>
@@ -56,14 +57,14 @@
 							Uw lengte in cm:
 						</td>
 						<td>
-							<input type="text" name="lengte">
+							<input type="text" name="lengte" id="lengte">
 							<br>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<br>
-							<input type="submit" name="submit" value="Bereken BMI" class="bereken">
+							<button class="bereken">Bereken BMI</button>
 						</td>
 					</tr>
 				</table>
